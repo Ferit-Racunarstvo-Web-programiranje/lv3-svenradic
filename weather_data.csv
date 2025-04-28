@@ -1,0 +1,18 @@
+Date,Temperature,Humidity,Wind Speed,Precipitation,Cloud Cover,Atmospheric Pressure,UV Index,Season,Visibility,Location,Weather Type
+2025-04-01,23,69,9.5,10,clear,1012.91,9,Spring,8.5,inland,Sunny
+2025-04-02,29,82,18.0,78,overcast,991.54,3,Spring,4.0,inland,Rainy
+2025-04-03,36,48,3.5,11,partly cloudy,1024.92,10,Autumn,5.5,mountain,Sunny
+2025-04-04,32,35,5.5,9,partly cloudy,1010.24,6,Summer,9.0,coastal,Sunny
+2025-04-05,23,23,3.5,8,clear,1027.69,5,Spring,6.5,mountain,Sunny
+2025-04-06,30,57,12.5,33,overcast,1002.2,1,Autumn,7.0,inland,Cloudy
+2025-04-07,28,65,1.5,20,partly cloudy,1007.0,4,Spring,8.5,mountain,Cloudy
+2025-04-08,29,96,11.5,79,partly cloudy,1013.23,0,Spring,1.0,inland,Rainy
+2025-04-09,35,63,8.0,3,clear,1029.83,10,Spring,5.0,mountain,Sunny
+2025-04-10,18,82,8.5,83,overcast,999.13,0,Summer,2.5,coastal,Rainy
+2025-04-11,8,90,1.5,70,partly cloudy,1011.19,10,Spring,7.5,mountain,Cloudy
+2025-04-12,19,65,2.5,20,partly cloudy,1016.81,1,Spring,8.0,inland,Cloudy
+2025-04-13,28,72,14.0,73,partly cloudy,1005.12,1,Summer,1.0,coastal,Rainy
+2025-04-14,40,94,15.0,97,clear,1021.59,3,Autumn,4.5,coastal,Sunny
+2025-04-15,15,61,11.0,63,overcast,1006.12,3,Spring,4.5,mountain,Rainy
+2025-04-16,26,90,26.0,88,partly cloudy,998.97,4,Summer,2.5,coastal,Rainy
+2025-04-17,26,67,11.0,74,overcast,993.37,1,Spring,1.5,inland,Rainy

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Display of weather data" />
+    <link rel="stylesheet" href="/index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse
+/5.4.1/papaparse.min.js"></script>
+    <title>Primjer HTML5 stranice</title>
+    <!--promijeniti odgovarajući tekst na stranici
+		ovo je samo predložak-->
+  </head>
+  <body>
+    <header>
+      <h1>Dobrodosli na moju web stranicu</h1>
+    </header>
+
+    <nav class="navbar" aria-label="Primarna navigacija">
+      <button class="dropbtn">Menu</button>
+      <ul class="dropdown-content">
+        <li><a href="#">Početna</a></li>
+        <li><a href="#">Grafikon</a></li>
+        <li><a href="#">Slike</a></li>
+      </ul>
+    </nav>
+
+    <h2>Filteri</h2>
+    <div class="filter-container" aria-label="Filteri">
+      <label>Datum od: <input type="date" id="datum-od" /></label>
+      <label>Datum do: <input type="date" id="datum-do" /></label>
+      <label>Temperatura od: <input type="number" id="temp-od" /></label>
+      <label>Temperatura do: <input type="number" id="temp-do" /></label>
+      <label
+        >Lokacija:
+        <select id="lokacija-filter">
+          <option value="">Sve</option>
+          <option value="inland">Inland</option>
+          <option value="coastal">Coastal</option>
+          <option value="mountain">Mountain</option>
+        </select>
+      </label>
+      <label
+        >Sezona:
+        <select id="sezona-filter">
+          <option value="">Sve</option>
+          <option value="Spring">Spring</option>
+          <option value="Summer">Summer</option>
+          <option value="Autumn">Autumn</option>
+        </select>
+      </label>
+      <button onclick="filterData()">Primijeni filtere</button>
+    </div>
+
+    <h1 class="animated-heading" aria-label="Naslov">Vremenski Podaci</h1>
+    <section class="content-wrapper">
+      <table align="center" id="weather-table">
+        <thead>
+          <th>Date</th>
+          <th>Temperature (°C)</th>
+          <th>Humidity (%)</th>
+          <th>Wind Speed (km/h)</th>
+          <th>Precipitation (%)</th>
+          <th>Cloud Cover</th>
+          <th>Atmospheric Pressure</th>
+          <th>UV Index</th>
+          <th>Season</th>
+          <th>Visibility (km)</th>
+          <th>Location</th>
+          <th>Weather Type</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <aside class="weather-aside">
+        <picture class="weather-picture">
+          <source
+            media="(min-width: 1000px)"
+            srcset="slike/vrijeme.jpg"
+            width="600"
+          />
+          <source
+            media="(min-width: 800px)"
+            srcset="slike/vrijeme2.jpg"
+            width="600"
+          />
+          <img src="slike/vrijeme3.jpg" width="600" alt="Prikaz vremena" />
+        </picture>
+      </aside>
+    </section>
+
+    <h2>Plan aktivnosti</h2>
+    <ul id="lista-plana"></ul>
+
+    <button id="potvrdi-plan">Potvrdi plan aktivnosti</button>
+
+    <script src="script.js"></script>
+
+    <div class="main-content">
+      <section aria-label="Glavna sekcija">
+        <h2>Ovo je glavna sekcija</h2>
+        <p>
+          HTML5 omogućava semantičku strukturu koja poboljšava pristupačnost i
+          SEO.
+        </p>
+      </section>
+
+      <article>
+        <h2>Najnovije vijesti</h2>
+        <p>Ovdje se nalazi članak s važnim informacijama.</p>
+      </article>
+
+      <aside class="info-aside">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.678692715803!2d18.69534561581948!3d45.55513397910183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475ce7bb6760a181%3A0x400ad50862bd570!2sOsijek!5e0!3m2!1shr!2shr!4v1649946741720!5m2!1shr!2shr"
+          width="100%"
+          height="315"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </aside>
+    </div>
+
+    <footer>
+      <p>&copy; 2025. Web Programiranje. Sva prava pridrzana.</p>
+    </footer>
+  </body>
+</html>
